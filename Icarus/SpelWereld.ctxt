@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=SpelWereld()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ SpelWereld.\r\n\ \r\n
+comment1.params=
+comment1.target=void\ ObstacleSpawn()
+comment1.text=\ \r\n\ De\ methode\ om\ obstakels\ in\ de\ wereld\ te\ zetten.\r\n
+numComments=2
