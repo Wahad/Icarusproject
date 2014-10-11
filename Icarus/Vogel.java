@@ -19,12 +19,12 @@ public class Vogel extends Obstacle
     public void act() 
     {
         move(-4);
-        if(getY()>350)
+        if(getY()>=350)
         {
             turn(55);
             move(-5);
         }
-        else if(getY()<150)
+        else if(getY()<=150)
         {
             turn(-55);
             move(-5);

@@ -28,8 +28,8 @@ public class SpelWereld extends World
         addObject(new Dolfijn(), Greenfoot.getRandomNumber(400)+400, 490);
         addObject(new Wolk(), 800, Greenfoot.getRandomNumber(50)+Greenfoot.getRandomNumber(400) );
         addObject(new Bliksem(), Greenfoot.getRandomNumber(400)+400, 10);
-        addObject(new Vogel(), 800, Greenfoot.getRandomNumber(50)+Greenfoot.getRandomNumber(400) );
-        
+        addObject(new Vogel(), 795, Greenfoot.getRandomNumber(155)+Greenfoot.getRandomNumber(195) );
+        addObject(new Icarus(), 100, 250);
           
     }    
 }
