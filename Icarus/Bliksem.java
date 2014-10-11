@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bliksem extends Obstacle
 {
-    public Bliksem() 
+    public Bliksem()
     {
         turn(-45);
     }    

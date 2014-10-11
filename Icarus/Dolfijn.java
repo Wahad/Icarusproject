@@ -10,15 +10,15 @@ public class Dolfijn extends Obstacle
 {
     public Dolfijn()
     {
-        turn(270);
-    }
+        turn(90);
+    }    
     /**
      * Act - do whatever the Dolfijn wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        move(4);
+        move(-4);
         turn(-1);
         DeleteAfterUse();
         
