@@ -22,14 +22,12 @@ public class Obstakel extends Actor
 
         if (x == 0)
         {
-            World world;
-            world = getWorld();
+            World world = getWorld();
             world.removeObject(this);
         }
         else if (y > 490)
         {
-            World world;
-            world = getWorld();
+            World world = getWorld();
             world.removeObject(this);
         } 
     }    

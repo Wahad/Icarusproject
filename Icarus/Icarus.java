@@ -29,7 +29,8 @@ public class Icarus extends Actor
     {
         Initiate++;
         gravity();
-        vleugels();
+        wings();
+        collision();
     }    
     
     private void gravity()
@@ -55,7 +56,7 @@ public class Icarus extends Actor
         }
     }
     
-    private void vleugels()
+    private void wings()
     {
         
         if (Greenfoot.isKeyDown("space"))
@@ -68,6 +69,26 @@ public class Icarus extends Actor
             setImage(image2);
             
         }    
+    }
+    private void collision()
+    {
+           int y = getY();
+           Actor a = getOneIntersectingObject(Obstakel.class);
+           if( a != null)
+           {
+                World world = getWorld();
+                world.removeObject(this);
+           }
+           else if (y == 0)
+           {
+               World world = getWorld();
+               world.removeObject(this);
+           }
+           else if (y >= 495)
+           {
+               World world = getWorld();
+               world.removeObject(this);
+           }
     }
    
 }
