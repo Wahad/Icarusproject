@@ -30,20 +30,20 @@ public class Spawner extends Actor
         
         if(timer%150==0)
         {
-            randomNumber = Greenfoot.getRandomNumber(4);
-            if(randomNumber==0)
+            randomNumber = Greenfoot.getRandomNumber(100);
+            if(randomNumber<=20)
             {
                 getWorld().addObject(new Dolfijn(), Greenfoot.getRandomNumber(400)+400, 490); 
             }
-            else if(randomNumber==1)
+            else if(randomNumber>20 && randomNumber<=70)
             {
                 getWorld().addObject(new Wolk(), 800, Greenfoot.getRandomNumber(50)+Greenfoot.getRandomNumber(400) );     
             }
-            else if(randomNumber==2)
+            else if(randomNumber > 70 && randomNumber<= 90)
             {
-                getWorld().addObject(new Bliksem(), Greenfoot.getRandomNumber(500)-100, 10);   
+                getWorld().addObject(new Bliksem(), Greenfoot.getRandomNumber(300)+100, 10);   
             }
-            else if(randomNumber==3)
+            else if(randomNumber >90)
             {
                 getWorld().addObject(new Vogel(), 795, Greenfoot.getRandomNumber(155)+150 );
             }           
