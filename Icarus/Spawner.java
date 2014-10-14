@@ -17,7 +17,7 @@ public class Spawner extends Actor
     public void act() 
     {
         randomSpawn();
-        
+        addSpeed();
         timer++;
     }    
     public Spawner()
@@ -27,11 +27,9 @@ public class Spawner extends Actor
     
     public void addSpeed()
     {
-        if(timer%300==0)
+        if(timer%1500==0)
         {
-            //Obstacle.speed=speed++;
-            getWorld().getObjects(Obstacle.class).getInt(speed.int);
-            
+           Obstakel.speed++;
         }
     }
    

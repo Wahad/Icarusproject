@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Dolfijn extends Obstacle
+public class Dolfijn extends Obstakel
 {
     public Dolfijn()
     {

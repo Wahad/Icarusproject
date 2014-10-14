@@ -12,19 +12,29 @@ public class Icarus extends Actor
     private int Gravity = 1;
     private int Initiate;
     private int Counter;
+    private GreenfootImage image1;
+    private GreenfootImage image2;
+    
     /**
      * Act - do whatever the Icarus wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Icarus()
+    {
+        image1 = new GreenfootImage("IcarusSprite1.png");
+        image2 = new GreenfootImage("IcarusSprite2.png");
+    }
+    
     public void act() 
     {
         Initiate++;
         gravity();
+        vleugels();
     }    
     
     private void gravity()
     {
-        if(Initiate >= 75)
+        if(Initiate >=20)
         {
             if(GravityInEffect == 1)
             {
@@ -44,4 +54,20 @@ public class Icarus extends Actor
             }
         }
     }
+    
+    private void vleugels()
+    {
+        
+        if (Greenfoot.isKeyDown("space"))
+        {
+            setImage(image1);
+            
+        }
+        else
+        {
+            setImage(image2);
+            
+        }    
+    }
+   
 }
