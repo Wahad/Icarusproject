@@ -18,7 +18,7 @@ public class Bliksem extends Obstacle
      */
     public void act() 
     {
-        move(-4);
+        move(-speed);
         DeleteAfterUse();
     }    
 }

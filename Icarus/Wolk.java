@@ -14,7 +14,7 @@ public class Wolk extends Obstacle
      */
     public void act() 
     {
-        move(-3);
+        move(-speed);
         DeleteAfterUse();
     }    
 }

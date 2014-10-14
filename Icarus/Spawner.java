@@ -24,6 +24,16 @@ public class Spawner extends Actor
     {
         timer=0;
     }
+    
+    public void addSpeed()
+    {
+        if(timer%300==0)
+        {
+            //Obstacle.speed=speed++;
+            getWorld().getObjects(Obstacle.class).getInt(speed.int);
+            
+        }
+    }
    
     public void randomSpawn ()
     {

@@ -8,7 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Obstacle extends Actor
 {
-
+    public static int speed=3;
+    public static int getSpeed()
+    {
+        return speed;
+    }
+ 
     public void act() 
     { 
         DeleteAfterUse();

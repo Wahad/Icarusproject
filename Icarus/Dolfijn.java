@@ -18,7 +18,7 @@ public class Dolfijn extends Obstacle
      */
     public void act() 
     {
-        move(-4);
+        move(-speed);
         turn(-1);
         DeleteAfterUse();
         
