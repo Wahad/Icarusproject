@@ -90,5 +90,5 @@ public class Icarus extends Actor
                world.removeObject(this);
            }
     }
-   
+    
 }

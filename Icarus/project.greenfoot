@@ -6,6 +6,7 @@ class.Dolfijn.superclass=Obstakel
 class.Icarus.image=IcarusSprite2.png
 class.Icarus.superclass=greenfoot.Actor
 class.Obstakel.superclass=greenfoot.Actor
+class.Spawner.image=Spawner.png
 class.Spawner.superclass=greenfoot.Actor
 class.SpelWereld.image=IcarusBackground.png
 class.SpelWereld.superclass=greenfoot.World
