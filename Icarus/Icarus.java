@@ -14,6 +14,7 @@ public class Icarus extends Actor
     private int Counter;
     private GreenfootImage image1;
     private GreenfootImage image2;
+    public static boolean isDead;
     
     /**
      * Act - do whatever the Icarus wants to do. This method is called whenever
@@ -23,6 +24,7 @@ public class Icarus extends Actor
     {
         image1 = new GreenfootImage("IcarusSprite1.png");
         image2 = new GreenfootImage("IcarusSprite2.png");
+        isDead=false;
     }
     
     public void act() 
@@ -78,16 +80,19 @@ public class Icarus extends Actor
            {
                 World world = getWorld();
                 world.removeObject(this);
+                isDead=true;
            }
            else if (y == 0)
            {
                World world = getWorld();
                world.removeObject(this);
+               isDead=true;
            }
            else if (y >= 495)
            {
                World world = getWorld();
                world.removeObject(this);
+               isDead=true;
            }
     }
     

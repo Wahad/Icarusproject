@@ -20,41 +20,44 @@ public class Spawner extends Actor
         addSpeed();
         timer++;
     }    
+
     public Spawner()
     {
         timer=0;
     }
-    
+
     public void addSpeed()
     {
         if(timer%1500==0)
         {
-           Obstakel.speed++;
+            Obstakel.speed++;
         }
     }
-   
+
     public void randomSpawn ()
     {
-        
-        if(timer%150==0)
+        if(Icarus.isDead==false)
         {
-            randomNumber = Greenfoot.getRandomNumber(100);
-            if(randomNumber<=20)
+            if(timer%150==0)
             {
-                getWorld().addObject(new Dolfijn(), Greenfoot.getRandomNumber(400)+400, 490); 
+                randomNumber = Greenfoot.getRandomNumber(100);
+                if(randomNumber<=20)
+                {
+                    getWorld().addObject(new Dolfijn(), Greenfoot.getRandomNumber(400)+400, 490); 
+                }
+                else if(randomNumber>20 && randomNumber<=70)
+                {
+                    getWorld().addObject(new Wolk(), 800, Greenfoot.getRandomNumber(50)+Greenfoot.getRandomNumber(400) );     
+                }
+                else if(randomNumber > 70 && randomNumber<= 90)
+                {
+                    getWorld().addObject(new Bliksem(), Greenfoot.getRandomNumber(300)+100, 10);   
+                }
+                else if(randomNumber >90)
+                {
+                    getWorld().addObject(new Vogel(), 795, Greenfoot.getRandomNumber(155)+150 );
+                }           
             }
-            else if(randomNumber>20 && randomNumber<=70)
-            {
-                getWorld().addObject(new Wolk(), 800, Greenfoot.getRandomNumber(50)+Greenfoot.getRandomNumber(400) );     
-            }
-            else if(randomNumber > 70 && randomNumber<= 90)
-            {
-                getWorld().addObject(new Bliksem(), Greenfoot.getRandomNumber(300)+100, 10);   
-            }
-            else if(randomNumber >90)
-            {
-                getWorld().addObject(new Vogel(), 795, Greenfoot.getRandomNumber(155)+150 );
-            }           
         }
     }
 }
