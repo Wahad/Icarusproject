@@ -2,6 +2,4 @@
 comment0.params=
 comment0.target=SpelWereld()
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ SpelWereld.\r\n\ \r\n
-comment1.params=
-comment1.target=void\ randomSpawn()
-numComments=2
+numComments=1

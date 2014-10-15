@@ -21,32 +21,9 @@ public class SpelWereld extends World
         addObject(new Icarus(), 100, 250);
         addObject(new Spawner(), 0, 0);
         addObject(new BackButton(), 750, 480);
-        
-    }
 
-    public void randomSpawn ()
-    {
-        timer=0;
-        timer++;
-        if(timer%10==0)
-        {
-            randomNumber = Greenfoot.getRandomNumber(3);
-            if(randomNumber==0)
-            {
-                addObject(new Dolfijn(), Greenfoot.getRandomNumber(400)+400, 490); 
-            }
-            else if(randomNumber==1)
-            {
-                addObject(new Wolk(), 800, Greenfoot.getRandomNumber(50)+Greenfoot.getRandomNumber(400) );     
-            }
-            else if(randomNumber==2)
-            {
-                addObject(new Bliksem(), Greenfoot.getRandomNumber(500)-100, 10);   
-            }
-            else if(randomNumber==3)
-            {
-                addObject(new Vogel(), 795, Greenfoot.getRandomNumber(155)+150 );
-            }           
-        }
     }
+    
+
+             
 }

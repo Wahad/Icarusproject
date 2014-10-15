@@ -19,6 +19,7 @@ public class Spawner extends Actor
         randomSpawn();
         addSpeed();
         timer++;
+        restart();
     }    
 
     public Spawner()
@@ -61,4 +62,11 @@ public class Spawner extends Actor
            
         }
     }
+    private void restart()
+    {
+        if(Icarus.isDead==true)
+        {
+            getWorld().addObject(new RestartButton(), 400, 250);
+        }
+    }  
 }
