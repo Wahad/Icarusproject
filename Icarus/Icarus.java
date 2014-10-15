@@ -25,6 +25,8 @@ public class Icarus extends Actor
         image1 = new GreenfootImage("IcarusSprite1.png");
         image2 = new GreenfootImage("IcarusSprite2.png");
         isDead=false;
+        Spawner.timer = 0;
+        Obstakel.speed = 2;
     }
     
     public void act() 
@@ -94,6 +96,7 @@ public class Icarus extends Actor
                world.removeObject(this);
                isDead=true;
            }
+           
     }
     
 }

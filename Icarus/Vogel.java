@@ -25,13 +25,13 @@ public class Vogel extends Obstakel
     public void act() 
     {
         move(-speed);
-        if(getY()>=350)
+        if(getY()>=300)
         {
             turn(55);
             move(-5);
             setImage(image2);
         }
-        else if(getY()<=150)
+        else if(getY()<=200)
         {
             turn(-55);
             move(-5);

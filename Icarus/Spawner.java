@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Spawner extends Actor
 {
-    public int timer;
+    public static int timer;
     public int randomNumber;
     /**
      * Act - do whatever the Spawner wants to do. This method is called whenever
@@ -55,9 +55,10 @@ public class Spawner extends Actor
                 }
                 else if(randomNumber >90)
                 {
-                    getWorld().addObject(new Vogel(), 795, Greenfoot.getRandomNumber(155)+150 );
+                    getWorld().addObject(new Vogel(), 795, Greenfoot.getRandomNumber(105)+200 );
                 }           
             }
+           
         }
     }
 }
