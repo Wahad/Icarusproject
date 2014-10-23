@@ -59,9 +59,25 @@ public class Spawner extends Actor
                     getWorld().addObject(new Vogel(), 795, Greenfoot.getRandomNumber(105)+200 );
                 }           
             }
+            if(timer%300==0)
+            {
+                randomNumber = Greenfoot.getRandomNumber(90);
+                if(randomNumber<=30)
+                {
+                    getWorld().addObject(new Appel(), Greenfoot.getRandomNumber(400)+200, 490); 
+                }
+                else if(randomNumber>30 && randomNumber<=60)
+                {
+                    getWorld().addObject(new Munt(), 800, Greenfoot.getRandomNumber(50)+Greenfoot.getRandomNumber(400) );     
+                }
+                else if(randomNumber > 60 && randomNumber<= 90)
+                {
+                    getWorld().addObject(new Veer(), Greenfoot.getRandomNumber(300)+100, 10);   
+                }
            
+            }
         }
-    }
+    }    
     private void restart()
     {
         if(Icarus.isDead==true)

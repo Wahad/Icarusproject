@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Icarus here.
@@ -15,6 +15,9 @@ public class Icarus extends Actor
     private GreenfootImage image1;
     private GreenfootImage image2;
     public static boolean isDead;
+    public static int Appels;
+    public static int Munten;
+    public static int Veren;
     
     /**
      * Act - do whatever the Icarus wants to do. This method is called whenever
@@ -27,6 +30,9 @@ public class Icarus extends Actor
         isDead=false;
         Spawner.timer = 0;
         Obstakel.speed = 2;
+        Appels = 0;
+        Munten = 0;
+        Veren = 0;
     }
     
     public void act() 
@@ -97,6 +103,4 @@ public class Icarus extends Actor
                isDead=true;
            }
     }
-    
-    
 }
