@@ -23,7 +23,7 @@ public class Munt extends PuntenObject
         Actor a = getOneIntersectingObject(Icarus.class);
         if(a != null)
         {
-            Icarus.Munten = Icarus.Munten++;
+            Icarus.Munten++;
             World world = getWorld();
             world.removeObject(this);
         }

@@ -27,7 +27,7 @@ public class Veer extends PuntenObject
         Actor a = getOneIntersectingObject(Icarus.class);
         if(a != null)
         {
-            Icarus.Veren = Icarus.Veren++;
+            Icarus.Veren++;
             World world = getWorld();
             world.removeObject(this);
         }

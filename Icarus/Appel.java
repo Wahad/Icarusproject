@@ -29,7 +29,7 @@ public class Appel extends PuntenObject
         Actor a = getOneIntersectingObject(Icarus.class);
         if(a != null)
         {
-            Icarus.Appels = Icarus.Appels++;
+            Icarus.Appels++;
             World world = getWorld();
             world.removeObject(this);
         }
