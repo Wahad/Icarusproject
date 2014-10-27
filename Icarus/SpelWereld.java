@@ -22,6 +22,7 @@ public class SpelWereld extends World
         addObject(new Spawner(), 0, 0);
         addObject(new BackButton(), 750, 480);
         addObject(new ScoreCounter(), 100,100);
+        addObject(new HighscoreCounter(), 100, 50);
     }
     
 

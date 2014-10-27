@@ -18,16 +18,23 @@ public class ScoreCounter extends Actor
      * Act - do whatever the ScoreCounter wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public ScoreCounter()
+    {
+        Score=10;
+    }
     public void act() 
     {
         calculateScore();
     }    
+    
     
     public void calculateScore()
     {
         if(Icarus.isDead==false)
         {
             Score++;
+            HighscoreCounter counter = (HighscoreCounter)getWorld().getObjects(HighscoreCounter.class).get(0);
+            counter.add(1);
         }
         else
         {
