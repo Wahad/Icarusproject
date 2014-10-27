@@ -19,6 +19,8 @@ public class Icarus extends Actor
     public static int Munten;
     public static int Veren;
     
+    
+    
     /**
      * Act - do whatever the Icarus wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -33,6 +35,8 @@ public class Icarus extends Actor
         Appels = 0;
         Munten = 0;
         Veren = 0;
+        
+       
     }
     
     public void act() 
@@ -41,7 +45,11 @@ public class Icarus extends Actor
         gravity();
         wings();
         collision();
+        
+       
     }    
+    
+   
     
     private void gravity()
     {

@@ -21,7 +21,7 @@ public class SpelWereld extends World
         addObject(new Icarus(), 100, 250);
         addObject(new Spawner(), 0, 0);
         addObject(new BackButton(), 750, 480);
-
+        addObject(new ScoreCounter(), 100,100);
     }
     
 

@@ -25,6 +25,7 @@ public class Spawner extends Actor
     public Spawner()
     {
         timer=0;
+        
     }
 
     public void addSpeed()
