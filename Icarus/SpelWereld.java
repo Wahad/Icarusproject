@@ -20,9 +20,8 @@ public class SpelWereld extends World
         super(800, 500, 1); 
         addObject(new Icarus(), 100, 250);
         addObject(new Spawner(), 0, 0);
-        addObject(new BackButton(), 750, 480);
-        addObject(new ScoreCounter(), 100,100);
-        addObject(new HighscoreCounter(), 100, 50);
+        addObject(new BackButton(), 50, 480);
+        addObject(new HighscoreCounter(), 400, 25);
     }
     
 

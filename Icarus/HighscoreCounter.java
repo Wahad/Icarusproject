@@ -13,6 +13,12 @@ public class HighscoreCounter extends Actor
     private GreenfootImage background;
     private int value;
     private int target;
+    public static int Score;
+    private static int BonusScore;
+    public static int FinalScore;
+    private static int AppelScore;
+    private static int MuntScore;
+    private static int VeerScore;
 
     /**
      * Create a new counter, initialised to 0.
@@ -23,6 +29,7 @@ public class HighscoreCounter extends Actor
         value = 10;
         target = 10;
         updateImage();
+        Score = 10;
     }
     
     /**
@@ -30,6 +37,7 @@ public class HighscoreCounter extends Actor
      */
     public void act() 
     {
+        calculateScore();
         if (value < target) {
             value++;
             updateImage();
@@ -47,9 +55,9 @@ public class HighscoreCounter extends Actor
     /**
      * Add a new score to the current counter value.
      */
-    public void add(int score)
+    public void add(int Score)
     {
-        target += score;
+        target += Score;
     }
 
     /**
@@ -80,5 +88,23 @@ public class HighscoreCounter extends Actor
         image.drawImage(text, (image.getWidth()-text.getWidth())/2, 
                         (image.getHeight()-text.getHeight())/2);
         setImage(image);
+    }
+    
+    public void calculateScore()
+    {
+        if(Icarus.isDead==false)
+        {
+            Score++;
+            HighscoreCounter counter = (HighscoreCounter)getWorld().getObjects(HighscoreCounter.class).get(0);
+            counter.add(1);
+        }
+        else
+        {
+            AppelScore=Icarus.Appels*100;
+            MuntScore=Icarus.Munten*200;
+            VeerScore=Icarus.Veren*500;
+            BonusScore=AppelScore+MuntScore+VeerScore;
+            FinalScore=Score+BonusScore;
+        }
     }
 }
