@@ -10,6 +10,7 @@ public class Spawner extends Actor
 {
     public static int timer;
     public int randomNumber;
+   
     /**
      * Act - do whatever the Spawner wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -25,7 +26,7 @@ public class Spawner extends Actor
     public Spawner()
     {
         timer=0;
-        
+
     }
 
     public void addSpeed()
@@ -75,16 +76,18 @@ public class Spawner extends Actor
                 {
                     getWorld().addObject(new Veer(), Greenfoot.getRandomNumber(300)+100, 10);   
                 }
-           
+
             }
         }
     }    
+
     private void restart()
     {
         if(Icarus.isDead==true)
         {
             getWorld().addObject(new RestartButton(), 400, 250);
-            getWorld().addObject(new HighscoreButton(), 400, 400);
+            getWorld().addObject(new Scoreboard(), 400, 300);
         }
     }  
+
 }

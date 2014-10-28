@@ -20,6 +20,6 @@ public class StartWereld extends World
         
         addObject(new SpelButton(), 320, 150);
         addObject(new CreditButton(), 320, 250);
-        addObject(new HighscoreButton(), 320, 350);
+
     }
 }

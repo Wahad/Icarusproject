@@ -1,33 +1,37 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
-import java.awt.Font;
-
+/**
+ * Write a description of class Scoreboard here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
 public class Scoreboard extends Actor
 {
-   //Properties ...
-   private int score;
-   private String text;
+    private static final Color transparent = new Color(0,0,0,0);
+    private GreenfootImage background;
+    /**
+     * Act - do whatever the Scoreboard wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    
+    public Scoreboard()
+    {
+        background = getImage();  // get image from class
+        updateImage();
+    }
+    
     public void act() 
     {
         
     }    
-    public Scoreboard(String label)
-    {
-        GreenfootImage img = new GreenfootImage(300,40);
-        img.setColor(Color.WHITE);
-        Font f=new Font("Comic Sans MS",Font.BOLD,24);
-        img.setFont(f);
-        img.drawString(label + ": " + HighscoreCounter.FinalScore, 5, 35);
-        setImage(img);
-        text=label;
-        score=HighscoreCounter.FinalScore;
-    }
     
-   
-    public int getScore()
+    private void updateImage()
     {
-        return score;
+        GreenfootImage image = new GreenfootImage(background);
+        GreenfootImage text = new GreenfootImage("Highscore: " + HighscoreCounter.FinalScore, 22, Color.BLACK, transparent);
+        image.drawImage(text, (image.getWidth()-text.getWidth())/2, 
+                        (image.getHeight()-text.getHeight())/2);
+        setImage(image);
     }
-    
-   
 }
