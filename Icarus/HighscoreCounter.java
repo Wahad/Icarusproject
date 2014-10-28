@@ -30,6 +30,7 @@ public class HighscoreCounter extends Actor
         target = 10;
         updateImage();
         Score = 10;
+       
     }
     
     /**

@@ -84,6 +84,7 @@ public class Spawner extends Actor
         if(Icarus.isDead==true)
         {
             getWorld().addObject(new RestartButton(), 400, 250);
+            getWorld().addObject(new HighscoreButton(), 400, 400);
         }
     }  
 }
