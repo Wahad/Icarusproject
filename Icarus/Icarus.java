@@ -1,10 +1,8 @@
  import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Icarus here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Icarus is de avatar van de speler, die zoveel mogelijk Obstakels moet
+ * ontwijken en zoveel mogelijk Puntenobjecten moet verzamelen.
  */
 public class Icarus extends Actor
 {
@@ -49,7 +47,10 @@ public class Icarus extends Actor
        
     }    
     
-   
+   /**
+    * Deze methode zorgt ervoor dat Icarus valt zolang de spatiebalk
+    * niet wordt ingedrukt, door hem afhankelijk te maken van zwaartekracht.
+    */
     
     private void gravity()
     {
@@ -73,6 +74,9 @@ public class Icarus extends Actor
             }
         }
     }
+    /**
+     * Deze methode laat Icarus met zijn vleugels slaan.
+     */
     
     private void wings()
     {
@@ -80,14 +84,18 @@ public class Icarus extends Actor
         if (Greenfoot.isKeyDown("space"))
         {
             setImage(image1);
-            
         }
         else
         {
             setImage(image2);
-            
         }    
     }
+    
+    /**
+     * Deze methode kijkt of Icarus met een Obstakel heeft gebotst, te hoog
+     * of te laag heeft gevlogen. Als dit zo is, dan is Icarus dood en is het
+     * spel voorbij.
+     */
     private void collision()
     {
            int y = getY();

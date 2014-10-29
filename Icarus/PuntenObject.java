@@ -1,10 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class PuntenObject here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Dit is de superklasse voor de objecten die verzameld kunnen worden voor bonuspunten.
  */
 public class PuntenObject extends Actor
 {
@@ -18,6 +15,11 @@ public class PuntenObject extends Actor
         punten();
     } 
 
+    /**
+     * Deze methode kijkt of Icarus met een Puntenobject heeft gebotst, en zo ja, dan haalt hij het object uit de
+     * wereld. Als Icarus niet met een object heeft gebotst, haalt de methode het object weg als hij de rand
+     * van de wereld heeft bereikt.
+     */
     public void punten()
     {
         Actor a = getOneIntersectingObject(Icarus.class);

@@ -1,10 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class RestartButton here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Deze knop zorgt ervoor dat je het spel opnieuw kan spelen als je dood bent gegaan zonder dat je terug naar het 
+ * hoofdmenu hoeft te gaan.
  */
 public class RestartButton extends Button
 {

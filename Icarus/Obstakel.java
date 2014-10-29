@@ -1,10 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Wolk here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Dit is de superklasse van de obstakels die moeten worden ontweken.
  */
 public class Obstakel extends Actor
 {
@@ -14,6 +11,11 @@ public class Obstakel extends Actor
     { 
         DeleteAfterUse();
     }
+    
+    /**
+     * Deze methode zorgt ervoor dat de objecten verdwijnen als ze 
+     * het einde van de wereld raken zonder Icarus te hebben geraakt.
+     */
     
     public void DeleteAfterUse()
     {

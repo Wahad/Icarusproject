@@ -1,15 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Vogel here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * De vogel beweegt in een zigzagpatroon.
  */
 public class Vogel extends Obstakel
 {
     public GreenfootImage image1;
     public GreenfootImage image2;
+    
     
     public Vogel()
     {
@@ -19,8 +17,9 @@ public class Vogel extends Obstakel
         setImage(image2);
     }
     /**
-     * Act - do whatever the Vogel wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Bij deze methode wordt het plaatje van de vogel ook veranderd 
+     * als zijn traject veranderd; d.w.z. als hij naar boven of beneden
+     * vliegt.
      */
     public void act() 
     {

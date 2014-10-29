@@ -4,4 +4,5 @@ comment0.target=void\ act()
 comment0.text=\r\n\ Act\ -\ do\ whatever\ the\ PuntenObject\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment1.params=
 comment1.target=void\ punten()
+comment1.text=\r\n\ Deze\ methode\ kijkt\ of\ Icarus\ met\ een\ Puntenobject\ heeft\ gebotst,\ en\ zo\ ja,\ dan\ haalt\ hij\ het\ object\ uit\ de\r\n\ wereld.\ Als\ Icarus\ niet\ met\ een\ object\ heeft\ gebotst,\ haalt\ de\ methode\ het\ object\ weg\ als\ hij\ de\ rand\r\n\ van\ de\ wereld\ heeft\ bereikt.\r\n
 numComments=2

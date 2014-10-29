@@ -1,10 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Munt here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * De munt beweegt net zoals de wolk.
  */
 public class Munt extends PuntenObject
 {
@@ -17,6 +14,12 @@ public class Munt extends PuntenObject
         move(-speed);
         punten();
     }    
+    
+    /**
+     * Deze methode werkt net zoals de punten() methode in de superklasse PuntenObject,
+     * maar slaat ook het aantal verzamelde munten op in Icarus zodat ze uiteindelijk 
+     * bij de score kunnen worden opgeteld.
+     */
     
     public void punten()
     {

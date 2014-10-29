@@ -1,10 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Spawner here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * De spawner zorgt everoor dat alle objecten in de wereld worden gezet.
  */
 public class Spawner extends Actor
 {
@@ -28,6 +25,9 @@ public class Spawner extends Actor
         timer=0;
 
     }
+    /**
+     * Deze methode zorgt ervoor dat na een bepaalde tijd de Obstakels sneller beginnen te bewegen, om het spel wat moeilijker te maken.
+     */
 
     public void addSpeed()
     {
@@ -37,7 +37,11 @@ public class Spawner extends Actor
         }
     }
 
-    public void randomSpawn ()
+    /**
+     * Deze methode zorgt ervoor dat zolang Icarus nog niet dood is, er Obstakels en Puntenobjecten in de wereld worden gezet. 
+     * Dit doet de methode door via een timer, een for-loop en een willekeurig nummer om de zoveel tijd twee objecten in de wereld zet.
+     */
+    public void randomSpawn()
     {
         if(Icarus.isDead==false)
         {
@@ -81,6 +85,9 @@ public class Spawner extends Actor
         }
     }    
 
+    /**
+     * Deze methode zet een object van de klasse Scoreboard en een herstart-knop in de wereld als Icarus dood is.
+     */
     private void restart()
     {
         if(Icarus.isDead==true)

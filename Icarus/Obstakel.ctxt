@@ -3,4 +3,5 @@ comment0.params=
 comment0.target=void\ act()
 comment1.params=
 comment1.target=void\ DeleteAfterUse()
+comment1.text=\r\n\ Deze\ methode\ zorgt\ ervoor\ dat\ de\ objecten\ verdwijnen\ als\ ze\ \r\n\ het\ einde\ van\ de\ wereld\ raken\ zonder\ Icarus\ te\ hebben\ geraakt.\r\n
 numComments=2

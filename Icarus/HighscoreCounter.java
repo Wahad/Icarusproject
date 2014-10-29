@@ -2,10 +2,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
 
 /**
- * A simple counter with graphical representation as an actor on screen.
+ * Deze klasse geeft een teller weer op het scherm om de score bij te houden, en 
+ * na de dood van Icarus berekent hij ook de eindscore.
  * 
- * @author mik
- * @version 1.0
  */
 public class HighscoreCounter extends Actor
 {
@@ -21,7 +20,7 @@ public class HighscoreCounter extends Actor
     private static int VeerScore;
 
     /**
-     * Create a new counter, initialised to 0.
+     * Deze constructor laat de score beginnen bij 10.
      */
     public HighscoreCounter()
     {
@@ -34,7 +33,7 @@ public class HighscoreCounter extends Actor
     }
     
     /**
-     * Animate the display to count up (or down) to the current target value.
+     * Deze methode laat de waardes oplopen.
      */
     public void act() 
     {
@@ -54,7 +53,7 @@ public class HighscoreCounter extends Actor
     }
 
     /**
-     * Add a new score to the current counter value.
+     * Deze methode telt de score bij de huidge scorewaarde op.
      */
     public void add(int Score)
     {
@@ -62,7 +61,7 @@ public class HighscoreCounter extends Actor
     }
 
     /**
-     * Return the current counter value.
+     * Deze methode geeft de huidige waarde weer.
      */
     public int getValue()
     {
@@ -70,7 +69,7 @@ public class HighscoreCounter extends Actor
     }
 
     /**
-     * Set a new counter value.
+     * Deze methode zorgt dat de waarde verandert als hij oplooopt.
      */
     public void setValue(int newValue)
     {
@@ -80,7 +79,7 @@ public class HighscoreCounter extends Actor
     }
 
     /**
-     * Update the image on screen to show the current value.
+     * Deze methode laat de teller op het scherm oplopen zolang de waardes veranderen.
      */
     private void updateImage()
     {
@@ -90,6 +89,11 @@ public class HighscoreCounter extends Actor
                         (image.getHeight()-text.getHeight())/2);
         setImage(image);
     }
+    
+    /**
+     * Deze methode zorgt ervoor dat de score blijft oplopen zolang Icarus leeft.
+     * Als Icarus dood is worden de waardes van de verzamelde Puntenobjecten berekend en hierbij opgeteld.
+     */
     
     public void calculateScore()
     {
@@ -103,7 +107,7 @@ public class HighscoreCounter extends Actor
         {
             AppelScore=Icarus.Appels*100;
             MuntScore=Icarus.Munten*200;
-            VeerScore=Icarus.Veren*500;
+            VeerScore=Icarus.Veren*400;
             BonusScore=AppelScore+MuntScore+VeerScore;
             FinalScore=Score+BonusScore;
         }

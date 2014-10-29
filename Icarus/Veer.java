@@ -1,10 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Veer here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * De veer beweegt net zoals de bliksem.
  */
 public class Veer extends PuntenObject
 {
@@ -21,7 +18,11 @@ public class Veer extends PuntenObject
         move(-speed);
         punten();
     }    
-    
+    /**
+     * Deze methode werkt net zoals de punten() methode in de superklasse PuntenObject,
+     * maar slaat ook het aantal verzamelde veren op in Icarus zodat ze uiteindelijk 
+     * bij de score kunnen worden opgeteld.
+     */
     public void punten()
     {
         Actor a = getOneIntersectingObject(Icarus.class);

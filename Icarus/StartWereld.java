@@ -1,10 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class StartWereld here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Het hoofdmenu. Hieruit zijn het spel en de credits 
+ * te bereiken.
  */
 public class StartWereld extends World
 {
@@ -15,7 +13,9 @@ public class StartWereld extends World
      */
     public StartWereld()
     {    
-        // Create a new world with 800x500 cells with a cell size of 1x1 pixels.
+        /** Dit maakt een nieuw hoofdmenu aan met knoppen om het spel en de credits
+        * te bereiken.
+        */ 
         super(640, 480, 1); 
         
         addObject(new SpelButton(), 320, 150);

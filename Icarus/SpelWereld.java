@@ -1,22 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class SpelWereld here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Dit is de Spelwereld, waar het spel gespeeld van worden.
  */
 public class SpelWereld extends World
 {
-    private int timer;
-    private int randomNumber;
     /**
      * Constructor for objects of class SpelWereld.
      * 
      */
     public SpelWereld()
     {    
-        // Create a new world with 800x500 cells with a cell size of 1x1 pixels.
+        /**
+         * Dit maakt de avatar van de speler aan, alsmede de Spawner, een teller voor de score, en
+         * een knop om terug te gaan naar het hoofdmenu.
+         */
         super(800, 500, 1); 
         addObject(new Icarus(), 100, 250);
         addObject(new Spawner(), 0, 0);

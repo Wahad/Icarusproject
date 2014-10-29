@@ -1,10 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Button here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Dit is de superklasse van de knoppen die ervoor zorgen dat je met een muisklik iets kan doen.
  */
 public class Button extends Actor
 {

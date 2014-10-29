@@ -6,4 +6,5 @@ comment1.params=
 comment1.target=void\ act()
 comment2.params=
 comment2.target=void\ updateImage()
+comment2.text=\r\n\ Deze\ methode\ geeft\ de\ totale\ waarde\ van\ de\ score\ aan\ op\ het\ scherm.\r\n
 numComments=3

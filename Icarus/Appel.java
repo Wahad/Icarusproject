@@ -1,10 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Appel here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * De appel beweegt net zoals de dolfijn, en is 100 punten waard.
  */
 public class Appel extends PuntenObject
 {
@@ -23,6 +20,12 @@ public class Appel extends PuntenObject
        punten();
        
     }    
+    
+    /**
+     * Deze methode werkt net zoals de punten() methode in de superklasse PuntenObject,
+     * maar slaat ook het aantal verzamelde appels op in Icarus zodat ze uiteindelijk 
+     * bij de score kunnen worden opgeteld.
+     */
     
     public void punten()
     {

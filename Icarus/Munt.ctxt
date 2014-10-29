@@ -4,4 +4,5 @@ comment0.target=void\ act()
 comment0.text=\r\n\ Act\ -\ do\ whatever\ the\ Munt\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment1.params=
 comment1.target=void\ punten()
+comment1.text=\r\n\ Deze\ methode\ werkt\ net\ zoals\ de\ punten()\ methode\ in\ de\ superklasse\ PuntenObject,\r\n\ maar\ slaat\ ook\ het\ aantal\ verzamelde\ munten\ op\ in\ Icarus\ zodat\ ze\ uiteindelijk\ \r\n\ bij\ de\ score\ kunnen\ worden\ opgeteld.\r\n
 numComments=2

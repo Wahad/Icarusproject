@@ -1,10 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Dolfijn here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * De dolfijn springt met een boog vanaf de onderkant van het scherm.
  */
 public class Dolfijn extends Obstakel
 {

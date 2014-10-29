@@ -1,10 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Wolk here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * De wolk beweegt simpelweg van rechts naar links in een horizontale lijn.
  */
 public class Wolk extends Obstakel
 {

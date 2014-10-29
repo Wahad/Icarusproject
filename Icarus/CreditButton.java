@@ -1,10 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class CreditButton here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Deze knop zorgt ervoor dat je het menu van de credits kan bereiken.
  */
 public class CreditButton extends Button
 {

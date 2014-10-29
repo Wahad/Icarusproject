@@ -1,10 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.Color;
 /**
- * Write a description of class Scoreboard here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Het scoreboard geeft de totale score aan na de dood van Icarus, door de tijd-score te voegen bij de
+ * waardes van de Puntenobjecten die verzameld zijn. 
  */
 public class Scoreboard extends Actor
 {
@@ -25,6 +23,10 @@ public class Scoreboard extends Actor
     {
         
     }    
+    
+    /**
+     * Deze methode geeft de totale waarde van de score aan op het scherm.
+     */
     
     private void updateImage()
     {
