@@ -29,7 +29,7 @@ public class Scoreboard extends Actor
     private void updateImage()
     {
         GreenfootImage image = new GreenfootImage(background);
-        GreenfootImage text = new GreenfootImage("Highscore: " + HighscoreCounter.FinalScore, 22, Color.BLACK, transparent);
+        GreenfootImage text = new GreenfootImage("Your final score is: " + HighscoreCounter.FinalScore, 22, Color.WHITE, transparent);
         image.drawImage(text, (image.getWidth()-text.getWidth())/2, 
                         (image.getHeight()-text.getHeight())/2);
         setImage(image);
